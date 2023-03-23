@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://ry4ne1lpfuwn"]
+
+[ext_resource type="Texture2D" uid="uid://m4c7ns0fsn1o" path="res://Hoguera.png" id="1_sqoup"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub5bh"]
+atlas = ExtResource("1_sqoup")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lgc0"]
+atlas = ExtResource("1_sqoup")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1yff"]
+atlas = ExtResource("1_sqoup")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5ryd"]
+atlas = ExtResource("1_sqoup")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qcd0n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub5bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lgc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1yff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5ryd")
+}],
+"loop": true,
+"name": &"Base",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skmw4"]
+size = Vector2(16, 8)
+
+[node name="Campfire" type="StaticBody2D"]
+process_mode = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qcd0n")
+animation = &"Base"
+autoplay = "Base"
+frame_progress = 0.434503
+speed_scale = 1.1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_skmw4")

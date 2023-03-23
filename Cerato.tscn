@@ -1,0 +1,272 @@
+[gd_scene load_steps=30 format=3 uid="uid://bs2uooj1tdfxh"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_y2x6w"]
+[ext_resource type="Texture2D" uid="uid://c83twb4g01g3m" path="res://Triceratops.png" id="2_xiiv6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdt22"]
+size = Vector2(10, 7)
+
+[sub_resource type="Animation" id="Animation_wdcq7"]
+resource_name = "Espera_Arriba"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+
+[sub_resource type="Animation" id="Animation_8wvwa"]
+resource_name = "Espera_Izquierda"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_jxn7f"]
+resource_name = "Espera_abajo"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_4c6jw"]
+resource_name = "Espera_derecha"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_kyrnp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_hjycy"]
+resource_name = "Walk_Down"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_yg7ks"]
+resource_name = "Walk_Abajo"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 6, 8]
+}
+
+[sub_resource type="Animation" id="Animation_q25n2"]
+resource_name = "Walk_Derecha"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [3, 5, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_hdhm4"]
+resource_name = "Walk_Izquierda"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 9, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uq72n"]
+_data = {
+"Espera_Arriba": SubResource("Animation_wdcq7"),
+"Espera_Izquierda": SubResource("Animation_8wvwa"),
+"Espera_abajo": SubResource("Animation_jxn7f"),
+"Espera_derecha": SubResource("Animation_4c6jw"),
+"RESET": SubResource("Animation_kyrnp"),
+"Walk_Abajo": SubResource("Animation_hjycy"),
+"Walk_Arriba": SubResource("Animation_yg7ks"),
+"Walk_Derecha": SubResource("Animation_q25n2"),
+"Walk_Izquierda": SubResource("Animation_hdhm4")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_i0t0e"]
+animation = &"Walk_Izquierda"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t3bsj"]
+animation = &"Walk_Derecha"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ahw8s"]
+animation = &"Walk_Abajo"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_32mpl"]
+animation = &"Walk_Arriba"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_v8c7y"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_i0t0e")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_t3bsj")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_ahw8s")
+blend_point_2/pos = Vector2(0, 1.1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_32mpl")
+blend_point_3/pos = Vector2(0, -1.1)
+min_space = Vector2(-1, -1.14)
+max_space = Vector2(1, 1.14)
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_6g20r"]
+animation = &"Espera_Izquierda"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ughq6"]
+animation = &"Espera_derecha"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qcujw"]
+animation = &"Espera_abajo"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ua7c7"]
+animation = &"Espera_Arriba"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_0u0po"]
+auto_triangles = false
+blend_point_0/node = SubResource("AnimationNodeAnimation_6g20r")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_ughq6")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_qcujw")
+blend_point_2/pos = Vector2(0, 1.1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_ua7c7")
+blend_point_3/pos = Vector2(0, -1.1)
+triangles = PackedInt32Array(0, 1, 2, 0, 1, 3)
+min_space = Vector2(-1, -1.14)
+max_space = Vector2(1, 1.14)
+snap = Vector2(0.01, 1)
+blend_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5rtjg"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gnhfg"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b2xfp"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_rl08i"]
+states/Caminar/node = SubResource("AnimationNodeBlendSpace2D_v8c7y")
+states/Caminar/position = Vector2(578.667, 99.3333)
+states/End/position = Vector2(898.667, 99.5556)
+states/Espera/node = SubResource("AnimationNodeBlendSpace2D_0u0po")
+states/Espera/position = Vector2(360, 99.3333)
+transitions = ["Start", "Espera", SubResource("AnimationNodeStateMachineTransition_5rtjg"), "Espera", "Caminar", SubResource("AnimationNodeStateMachineTransition_gnhfg"), "Caminar", "Espera", SubResource("AnimationNodeStateMachineTransition_b2xfp")]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_01qh8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hnp2w"]
+size = Vector2(10, 7)
+
+[node name="CeratoPlayer" type="CharacterBody2D"]
+script = ExtResource("1_y2x6w")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_xiiv6")
+hframes = 3
+vframes = 4
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_sdt22")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uq72n")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_rl08i")
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_01qh8")
+parameters/Caminar/blend_position = Vector2(0, 0)
+parameters/Espera/blend_position = Vector2(0.00122106, 1.09102)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_hnp2w")

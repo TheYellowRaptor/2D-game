@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://8cik4b8ikd5h"]
+
+[ext_resource type="Texture2D" uid="uid://c2n4xgefice3a" path="res://Hoguera - copia.png" id="1_icytg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kph24"]
+atlas = ExtResource("1_icytg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md71g"]
+atlas = ExtResource("1_icytg")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ptnw"]
+atlas = ExtResource("1_icytg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8lch"]
+atlas = ExtResource("1_icytg")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xkoiy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kph24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md71g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ptnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8lch")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ic18"]
+size = Vector2(28, 10)
+
+[node name="Campfire_fish" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xkoiy")
+autoplay = "default"
+frame_progress = 0.68799
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_5ic18")
