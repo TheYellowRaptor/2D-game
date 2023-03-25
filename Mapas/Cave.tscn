@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://bgkuv1r4hvf23"]
+[gd_scene load_steps=10 format=3 uid="uid://bfsp3r2h2jt2m"]
 
+[ext_resource type="Script" path="res://Mapas/Cave.gd" id="1_b6sxb"]
 [ext_resource type="Texture2D" uid="uid://cwi2xhosxbm2" path="res://Tilemaps/Cueva_darkblue.png" id="1_gjtky"]
 [ext_resource type="PackedScene" uid="uid://cm78nlis3pypj" path="res://Characters/Player/Cerato.tscn" id="2_8g7gx"]
 [ext_resource type="PackedScene" uid="uid://cyrw2qq2lle1w" path="res://Characters/Lightrap/Light_trap.tscn" id="3_qgoyq"]
@@ -89,6 +90,7 @@ sources/1 = SubResource("TileSetAtlasSource_bfdv0")
 
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_b6sxb")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_as_relative = false
