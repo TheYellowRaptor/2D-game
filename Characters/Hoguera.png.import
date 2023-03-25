@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c80gqniumq0bu"
-path="res://.godot/imported/Lamptrap.png-ff931c4bcb2cd5c674c70d69efea15d7.ctex"
+uid="uid://m4c7ns0fsn1o"
+path="res://.godot/imported/Hoguera.png-7f355cae0464c4aa943cd3a431303aac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lamptrap.png"
-dest_files=["res://.godot/imported/Lamptrap.png-ff931c4bcb2cd5c674c70d69efea15d7.ctex"]
+source_file="res://Characters/Hoguera.png"
+dest_files=["res://.godot/imported/Hoguera.png-7f355cae0464c4aa943cd3a431303aac.ctex"]
 
 [params]
 

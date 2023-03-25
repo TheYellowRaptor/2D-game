@@ -1,7 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://bi602rteyctfs"]
+[gd_scene load_steps=29 format=3 uid="uid://bqmccdt3i2ob0"]
 
-[ext_resource type="Texture2D" uid="uid://c83twb4g01g3m" path="res://Triceratops.png" id="1_8vpu4"]
-[ext_resource type="Script" path="res://cerato_npc.gd" id="1_tywk1"]
+[ext_resource type="Texture2D" uid="uid://c83twb4g01g3m" path="res://Characters/Player/Triceratops.png" id="1_8vpu4"]
+[ext_resource type="Script" path="res://Characters/CeratoNPC/cerato_npc.gd" id="1_llcpd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fo6x8"]
 size = Vector2(8, 5)
@@ -241,7 +241,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_d1cyx"]
 
 [node name="CeratoNPC" type="CharacterBody2D"]
-script = ExtResource("1_tywk1")
+script = ExtResource("1_llcpd")
 
 [node name="Triceratops" type="Sprite2D" parent="."]
 z_as_relative = false

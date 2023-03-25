@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2n4xgefice3a"
-path="res://.godot/imported/Hoguera - copia.png-064bb9ae8d7a48e4addcec9c3ba7e269.ctex"
+uid="uid://c80gqniumq0bu"
+path="res://.godot/imported/Lightrap.png-27700c5a8e52d417da1845f77a4dc203.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hoguera - copia.png"
-dest_files=["res://.godot/imported/Hoguera - copia.png-064bb9ae8d7a48e4addcec9c3ba7e269.ctex"]
+source_file="res://Characters/Lightrap/Lightrap.png"
+dest_files=["res://.godot/imported/Lightrap.png-27700c5a8e52d417da1845f77a4dc203.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx6j4t670e3tx"
-path="res://.godot/imported/02_Montaña_B.png-b2c8597e147d7fddc47bde46f482aee9.ctex"
+uid="uid://c83twb4g01g3m"
+path="res://.godot/imported/Triceratops.png-7d96d0fbd7dc4b53cd64f6c50007d7e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://02_Montaña_B.png"
-dest_files=["res://.godot/imported/02_Montaña_B.png-b2c8597e147d7fddc47bde46f482aee9.ctex"]
+source_file="res://Characters/Player/Triceratops.png"
+dest_files=["res://.godot/imported/Triceratops.png-7d96d0fbd7dc4b53cd64f6c50007d7e8.ctex"]
 
 [params]
 

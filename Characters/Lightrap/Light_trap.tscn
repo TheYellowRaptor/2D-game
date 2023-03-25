@@ -1,7 +1,7 @@
-[gd_scene load_steps=57 format=3 uid="uid://4ub3bjoshst1"]
+[gd_scene load_steps=57 format=3 uid="uid://cyrw2qq2lle1w"]
 
-[ext_resource type="Texture2D" uid="uid://c80gqniumq0bu" path="res://Lamptrap.png" id="1_fdrei"]
-[ext_resource type="Script" path="res://Light_trap.gd" id="2_mjuts"]
+[ext_resource type="Script" path="res://Characters/Lightrap/Light_trap.gd" id="1_xovi4"]
+[ext_resource type="Texture2D" uid="uid://c80gqniumq0bu" path="res://Characters/Lightrap/Lightrap.png" id="2_xs5it"]
 
 [sub_resource type="Animation" id="Animation_o0ekp"]
 resource_name = "Eat"
@@ -407,10 +407,10 @@ radius = 29.0
 height = 82.0
 
 [node name="StaticBody2D" type="StaticBody2D"]
-script = ExtResource("2_mjuts")
+script = ExtResource("1_xovi4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_fdrei")
+texture = ExtResource("2_xs5it")
 hframes = 30
 vframes = 6
 frame = 1

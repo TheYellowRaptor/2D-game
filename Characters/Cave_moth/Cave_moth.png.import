@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m4c7ns0fsn1o"
-path="res://.godot/imported/Hoguera.png-68bd5f3d328abb093fcdd3ac06efa561.ctex"
+uid="uid://bt7rgoxtsspgv"
+path="res://.godot/imported/Cave_moth.png-4ec0c64bd2e40f09b35031dfd0b67936.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hoguera.png"
-dest_files=["res://.godot/imported/Hoguera.png-68bd5f3d328abb093fcdd3ac06efa561.ctex"]
+source_file="res://Characters/Cave_moth/Cave_moth.png"
+dest_files=["res://.godot/imported/Cave_moth.png-4ec0c64bd2e40f09b35031dfd0b67936.ctex"]
 
 [params]
 

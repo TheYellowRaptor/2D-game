@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c83twb4g01g3m"
-path="res://.godot/imported/Triceratops.png-6739a1505c5f8020942f4af6559080db.ctex"
+uid="uid://cwi2xhosxbm2"
+path="res://.godot/imported/Cueva_darkblue.png-2817a0d0aedd6e4361ed0915b0577839.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Triceratops.png"
-dest_files=["res://.godot/imported/Triceratops.png-6739a1505c5f8020942f4af6559080db.ctex"]
+source_file="res://Tilemaps/Cueva_darkblue.png"
+dest_files=["res://.godot/imported/Cueva_darkblue.png-2817a0d0aedd6e4361ed0915b0577839.ctex"]
 
 [params]
 

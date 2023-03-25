@@ -1,10 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://smrlivvpg7rg"]
+[gd_scene load_steps=6 format=3 uid="uid://bxt6rq30808m0"]
 
-[ext_resource type="PackedScene" uid="uid://bs2uooj1tdfxh" path="res://Cerato.tscn" id="1_6s7vn"]
-[ext_resource type="Texture2D" uid="uid://cx6j4t670e3tx" path="res://02_Montaña_B.png" id="2_ytqyq"]
-[ext_resource type="PackedScene" uid="uid://bi602rteyctfs" path="res://cerato_npc.tscn" id="3_06454"]
-[ext_resource type="PackedScene" uid="uid://ry4ne1lpfuwn" path="res://campfire.tscn" id="4_8xf3v"]
-[ext_resource type="PackedScene" uid="uid://8cik4b8ikd5h" path="res://campfire_fish.tscn" id="5_n1fjd"]
+[ext_resource type="PackedScene" uid="uid://cm78nlis3pypj" path="res://Characters/Player/Cerato.tscn" id="1_6s7vn"]
+[ext_resource type="Texture2D" uid="uid://cx6j4t670e3tx" path="res://Tilemaps/02_Montaña_B.png" id="2_ytqyq"]
+[ext_resource type="PackedScene" uid="uid://bqmccdt3i2ob0" path="res://Characters/CeratoNPC/cerato_npc.tscn" id="3_uhm2c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_56xn0"]
 resource_name = "Montaña"
@@ -466,19 +464,10 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = -1
 layer_1/tile_data = PackedInt32Array(-65524, 524288, 8, -131069, 393216, 9, -131068, 458752, 9, 393231, 393216, 5, 393232, 458752, 5, 262144, 393216, 5, 262145, 458752, 5, -458737, 393216, 5, -458736, 458752, 5, -262159, 393216, 5, -262158, 458752, 5, -786438, 393216, 5, -786437, 458752, 5, 786417, 393216, 5, 786418, 458752, 5, 786439, 589824, 3, 327669, 589824, 3, -393216, 589824, 3, -720885, 589824, 3)
 
-[node name="CeratoNPC" parent="." instance=ExtResource("3_06454")]
-position = Vector2(-14, -16)
-scale = Vector2(0.9, 0.9)
-walk_min = 1.0
-walk_max = 3.0
-idle_max = 15.0
+[node name="CeratoNPC" parent="." instance=ExtResource("3_uhm2c")]
+position = Vector2(-76, -15)
+scale = Vector2(0.8, 0.8)
 
-[node name="CeratoNPC2" parent="." instance=ExtResource("3_06454")]
-position = Vector2(-40, -15)
-scale = Vector2(0.7, 0.7)
-
-[node name="Campfire" parent="." instance=ExtResource("4_8xf3v")]
-position = Vector2(25, -36)
-
-[node name="Campfire_fish" parent="." instance=ExtResource("5_n1fjd")]
-position = Vector2(-87, -50)
+[node name="CeratoNPC2" parent="." instance=ExtResource("3_uhm2c")]
+position = Vector2(27, -37)
+scale = Vector2(1.2, 1.2)
