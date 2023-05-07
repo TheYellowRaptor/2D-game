@@ -4,25 +4,25 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for n in 4:
+	for n in 1:
 		create_lights_in_cuadrant(Vector2(
 			randi_range(-75,0),
 			randi_range(0,75)
 		))
 
-	for n in 4:
+	for n in 1:
 		create_lights_in_cuadrant(Vector2(
 			randi_range(0,75),
 			randi_range(0,75)
 		))
 
-	for n in 4:
+	for n in 1:
 		create_lights_in_cuadrant(Vector2(
 			randi_range(-75,0),
 			randi_range(75,150)
 		))
 
-	for n in 4:
+	for n in 1:
 		create_lights_in_cuadrant(Vector2(
 			randi_range(0,75),
 			randi_range(75,150)

@@ -308,7 +308,6 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8kgbx"]
 switch_mode = 2
-advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ouv1y"]
 switch_mode = 2
@@ -398,7 +397,7 @@ states/Start/position = Vector2(172, 26.2222)
 states/Unglow/node = SubResource("AnimationNodeAnimation_yidu6")
 states/Unglow/position = Vector2(322.667, 7.45524)
 transitions = ["Idle_stand", "Idle_moving", SubResource("AnimationNodeStateMachineTransition_vka6j"), "Idle_moving", "Idle_stand", SubResource("AnimationNodeStateMachineTransition_6npyo"), "Idle_stand", "Idle_glow_up", SubResource("AnimationNodeStateMachineTransition_byosh"), "Idle_glow_up", "Idle_stand", SubResource("AnimationNodeStateMachineTransition_8kgbx"), "Show_up", "Idle_stand", SubResource("AnimationNodeStateMachineTransition_ouv1y"), "Idle_stand", "Eat", SubResource("AnimationNodeStateMachineTransition_avsfc"), "Idle_moving", "Hide", SubResource("AnimationNodeStateMachineTransition_j61i5"), "Idle_stand", "Hide", SubResource("AnimationNodeStateMachineTransition_dhd17"), "Idle_glow_up", "Hide", SubResource("AnimationNodeStateMachineTransition_4x8ds"), "Eat", "Pull_back", SubResource("AnimationNodeStateMachineTransition_fhvq4"), "Pull_back", "Reglow", SubResource("AnimationNodeStateMachineTransition_c7ox7"), "Reglow", "Idle_glow_up", SubResource("AnimationNodeStateMachineTransition_75l0b"), "Hide", "Idle_hide", SubResource("AnimationNodeStateMachineTransition_muhao"), "Idle_hide", "Idle_Hide_looking_up", SubResource("AnimationNodeStateMachineTransition_t047y"), "Idle_Hide_looking_up", "Idle_Hide_Hide", SubResource("AnimationNodeStateMachineTransition_7hg2l"), "Idle_Hide_looking_up", "Idle_Hide_Searching", SubResource("AnimationNodeStateMachineTransition_b53kg"), "Idle_Hide_Searching", "Idle_Hide_Hide", SubResource("AnimationNodeStateMachineTransition_ked3a"), "Idle_Hide_Hide", "Idle_hide", SubResource("AnimationNodeStateMachineTransition_s6148"), "Idle_hide", "Show_up", SubResource("AnimationNodeStateMachineTransition_oi2dg"), "Start", "Idle_stand", SubResource("AnimationNodeStateMachineTransition_40dpm"), "Idle_stand", "Reglow", SubResource("AnimationNodeStateMachineTransition_7bh2a"), "Idle_stand", "Unglow", SubResource("AnimationNodeStateMachineTransition_lxfx5"), "Unglow", "Reglow", SubResource("AnimationNodeStateMachineTransition_6kkbm")]
-graph_offset = Vector2(-67, -29.8781)
+graph_offset = Vector2(-36, -23.8781)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ro8h1"]
 

@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bfsp3r2h2jt2m"]
+[gd_scene load_steps=8 format=3 uid="uid://bfsp3r2h2jt2m"]
 
 [ext_resource type="Script" path="res://Mapas/Cave.gd" id="1_b6sxb"]
 [ext_resource type="Texture2D" uid="uid://cwi2xhosxbm2" path="res://Tilemaps/Cueva_darkblue.png" id="1_gjtky"]
 [ext_resource type="PackedScene" uid="uid://cm78nlis3pypj" path="res://Characters/Player/Cerato.tscn" id="2_8g7gx"]
-[ext_resource type="PackedScene" uid="uid://cyrw2qq2lle1w" path="res://Characters/Lightrap/Light_trap.tscn" id="3_qgoyq"]
 [ext_resource type="PackedScene" uid="uid://c3t0m0awtgtjn" path="res://Characters/Cave_moth/cave_moth.tscn" id="4_m8odl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bfdv0"]
@@ -86,8 +85,6 @@ sources/1 = SubResource("TileSetAtlasSource_bfdv0")
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ifrf7"]
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_bm04w"]
-
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_b6sxb")
@@ -122,16 +119,9 @@ velocidad_movimiento = 32.0
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_ifrf7")
 
 [node name="Camera2D" type="Camera2D" parent="CeratoPlayer"]
-zoom = Vector2(5, 5)
-
-[node name="Lightrap_01" parent="." instance=ExtResource("3_qgoyq")]
-position = Vector2(-40, 64)
-
-[node name="AnimationTree" parent="Lightrap_01" index="2"]
-parameters/playback = SubResource("AnimationNodeStateMachinePlayback_bm04w")
+zoom = Vector2(3, 3)
 
 [node name="Cave_moth" parent="." instance=ExtResource("4_m8odl")]
-position = Vector2(34, 99)
+position = Vector2(45, 70)
 
 [editable path="CeratoPlayer"]
-[editable path="Lightrap_01"]
