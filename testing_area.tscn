@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtbe5hjq24v8x"]
+
+[ext_resource type="Script" path="res://Testing_area.gd" id="1_6gtli"]
+[ext_resource type="PackedScene" uid="uid://c3t0m0awtgtjn" path="res://Characters/Cave_moth/cave_moth.tscn" id="2_dew5i"]
+
+[node name="Testing_area" type="Node2D"]
+script = ExtResource("1_6gtli")
+
+[node name="Cave_moth" parent="." instance=ExtResource("2_dew5i")]
+position = Vector2(38, 95)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)

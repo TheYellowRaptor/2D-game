@@ -24,6 +24,9 @@ func Set_Path():
 		)
 		timer.start(randf_range(0,0.5))
 	if(current_state == NPC_state.ATTRACTED):
+#		direction_movement += Vector2(
+#			self.position.lerp(Light_trap_position, 0.5)
+#		)
 		var x_res = (Light_trap_position.x - self.position.x)
 		var y_res = (Light_trap_position.y - self.position.y)
 		if(abs(x_res) > abs(y_res)):

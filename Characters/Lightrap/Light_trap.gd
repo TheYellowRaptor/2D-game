@@ -20,7 +20,7 @@ func _on_area_2d_body_entered(body):
 		if (current_state == NPC_state.EMERGED):
 			state_machine.travel("Idle_glow_up")
 			body.current_state = body.NPC_state.ATTRACTED
-			body.Light_trap_position = self.position
+			body.Light_trap_position = $CollisionPolygon2D.position
 		if (current_state == NPC_state.HIDED):
 			state_machine.travel("Idle_Hide_Searching")
 	#	pass # Replace with function body.

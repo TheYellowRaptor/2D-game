@@ -122,6 +122,6 @@ parameters/playback = SubResource("AnimationNodeStateMachinePlayback_ifrf7")
 zoom = Vector2(3, 3)
 
 [node name="Cave_moth" parent="." instance=ExtResource("4_m8odl")]
-position = Vector2(45, 70)
+position = Vector2(28, 107)
 
 [editable path="CeratoPlayer"]
