@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmqoj5w7jocfu"]
+
+[ext_resource type="Script" path="res://Shadow.gd" id="1_2nq85"]
+[ext_resource type="Texture2D" uid="uid://b7it7etrrw43v" path="res://Characters/Player_2AndAHalfD/A01.png" id="2_a6stn"]
+[ext_resource type="PackedScene" uid="uid://cp56oomam7mxy" path="res://Characters/Player_2AndAHalfD/Player_2AndHalfD.tscn" id="3_jbk8e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eakhg"]
+radius = 1.0
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_lmkpo"]
+
+[node name="PlayableCharacter" type="Node2D"]
+
+[node name="Shadow" type="CharacterBody2D" parent="."]
+script = ExtResource("1_2nq85")
+
+[node name="Sprite2D" type="Sprite2D" parent="Shadow"]
+modulate = Color(0, 0, 0, 0.513726)
+self_modulate = Color(1, 0.270588, 1, 0.6)
+texture = ExtResource("2_a6stn")
+hframes = 4
+vframes = 2
+frame = 2
+
+[node name="Area2D" type="Area2D" parent="Shadow"]
+
+[node name="ShadowArea" type="CollisionShape2D" parent="Shadow/Area2D"]
+shape = SubResource("CircleShape2D_eakhg")
+
+[node name="PlayerBody" parent="." instance=ExtResource("3_jbk8e")]
+
+[node name="AnimationTree" parent="PlayerBody" index="2"]
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_lmkpo")
+
+[editable path="PlayerBody"]

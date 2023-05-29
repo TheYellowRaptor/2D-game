@@ -1,7 +1,7 @@
 [gd_scene load_steps=30 format=3 uid="uid://cm78nlis3pypj"]
 
 [ext_resource type="Script" path="res://Characters/CharacterBody2D.gd" id="1_gr1mv"]
-[ext_resource type="Texture2D" uid="uid://c83twb4g01g3m" path="res://Characters/Triceratops.png" id="2_y2nc7"]
+[ext_resource type="Texture2D" uid="uid://c83twb4g01g3m" path="res://Characters/Player/Triceratops.png" id="2_y2nc7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdt22"]
 size = Vector2(10, 7)
