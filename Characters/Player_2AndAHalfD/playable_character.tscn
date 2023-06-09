@@ -12,7 +12,12 @@ radius = 1.0
 [node name="PlayableCharacter" type="Node2D"]
 
 [node name="Shadow" type="CharacterBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_2nq85")
+
+[node name="ShadowArea" type="CollisionShape2D" parent="Shadow"]
+shape = SubResource("CircleShape2D_eakhg")
 
 [node name="Sprite2D" type="Sprite2D" parent="Shadow"]
 modulate = Color(0, 0, 0, 0.513726)
@@ -23,9 +28,6 @@ vframes = 2
 frame = 2
 
 [node name="Area2D" type="Area2D" parent="Shadow"]
-
-[node name="ShadowArea" type="CollisionShape2D" parent="Shadow/Area2D"]
-shape = SubResource("CircleShape2D_eakhg")
 
 [node name="PlayerBody" parent="." instance=ExtResource("3_jbk8e")]
 

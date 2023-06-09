@@ -26,3 +26,9 @@ func _physics_process(_delta):
 	move_and_slide()
 	self.modulate.a = opacitty
 	self.scale = Vector2(shadow_scale,shadow_scale) # Quizás lo saque?
+
+func _through_walls():
+	# Acá debe considerar la posición del cuerpo mientras está en el aire y ver qué tile está entre
+	#esa posición y la posición de la sombra. Si solamente hay pared, entonces permanece en el mismo
+	#lugar. Si existe un tile "suelo" entonces la sombra debe "moverse" a esa posición.
+	pass
